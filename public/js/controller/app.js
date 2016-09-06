@@ -39,4 +39,7 @@ $scope.currMovie = null;
             }
         }
     };
+
+// in the template folder
+$scope.headerSrc = "template/header.html";
 });
