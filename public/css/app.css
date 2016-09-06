@@ -1,12 +1,13 @@
 body {
     padding-top: 50px;
+
 }
 #container {
     padding: 39px 0px;
 }
 .thumb-big
 {
-    height: 400px;
+    height: 500px;
 }
 .movies-list
 {
