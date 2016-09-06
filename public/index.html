@@ -5,6 +5,7 @@
     <title>Movie Stub - Book Movie Tickets Online</title>
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" type="text/css" href="css/app.css">
     <script type="text/javascript" src="js/lib/angular.min.js"></script>
     <script type="text/javascript" src="js/lib/angular-route.min.js"></script>
     <script type="text/javascript" src="js/lib/jquery.min.js"></script>
@@ -14,9 +15,9 @@
 </head>
 
 <body class="container" data-ng-controller="movieStubController">
-    <div data-ng-include src="headerSrc"></div>
+    <div ng-include src="headerSrc"></div>
     <hr />
-    <div data-ng-view=""></div> <!-- //Place holder for all pages -->
+    <div ng-view=""></div> <!-- //Place holder for all pages -->
 </body>
 
 </html>
