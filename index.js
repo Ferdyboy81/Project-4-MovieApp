@@ -1,10 +1,15 @@
+
+bodyParser = require('body-parser'),
+morgan = require('morgan');
+
 var express = require("express"),
     fs = require('fs'),
     port = process.env.PORT || 3000;
 
 var app = express();
-
-
+app.use(morgan('combined'));
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded());
 app.set("view options", {
     layout: false
 });
