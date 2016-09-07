@@ -26,6 +26,10 @@ app.get('/movies', function (req, res) {
     res.json(movies);
 });
 
+app.get('/bookings', function (req, res) {
+    res.json(bookings);
+})
+
 // update booking details
 app.post('/book', function (req, res) {
     var data = {

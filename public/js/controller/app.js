@@ -21,19 +21,17 @@ movieStubApp.controller("movieStubController", function ($scope, movieStubFactor
     $scope.getCount = function (n) {
         return new Array(n);
     };
-
+// toggle menu active status
     $scope.isActive = function (route) {
       return route === $location.path();
     }
 
+    $scope.isActivePath = function (route) {
+      return ($location.path()).indexof(route) >= 0;
+    }
 
+  });
 
-
-
-
-
-
-});
 // MOVIE DETAIS
 movieStubApp.controller("movieDetailsController", function ($scope, $routeParams) {
     $scope.getMovieById($routeParams.id);
@@ -58,11 +56,14 @@ $scope.processForm = function () {
             } // set the headers so angular passing info as form data (not request payload)
         })
             .success(function (data) {
-                console.log(data);
+                $location.path("/bookings");
             });
     };
 });
-
+// BOOKING CONTROLLER
+movieStubApp.controller("bookingDetailsController", function ($scope, movieStubBookingsFactory) {
+    $scope.bookings = movieStubBookingsFactory.query();
+});
 
 
 
