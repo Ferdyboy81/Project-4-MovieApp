@@ -1,10 +1,10 @@
 var express = require("express"),
+    fs = require('fs'),
+    port = process.env.PORT || 3000;
+
 bodyParser = require('body-parser'),
 morgan = require('morgan');
 
-var express = require("express"),
-    fs = require('fs'),
-    port = process.env.PORT || 3000;
 
 var app = express();
 app.use(morgan('combined'));
@@ -19,8 +19,9 @@ app.get('/', function (req, res) {
     res.render('public/index.html');
 });
 
+// dispatches API movies.json
 app.get('/movies', function (req, res) {
-    var movies = require('./data/movies/json');
+    var movies = require('./data/movies.json');
     res.json(movies);
 })
 
