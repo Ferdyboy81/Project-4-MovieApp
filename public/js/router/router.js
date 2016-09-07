@@ -8,6 +8,10 @@ movieStubApp.config(function ($routeProvider){
             templateUrl: 'template/movie.html',
             controller: 'movieDetailsController'
         })
+         .when('/bookings', {
+            templateUrl: 'template/bookings.html',
+            controller: 'bookingDetailsController'
+         })
          .when('/bookTickets/:id', {
             templateUrl: 'template/bookTickets.html',
             controller: 'bookTicketsController'

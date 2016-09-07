@@ -21,6 +21,18 @@ movieStubApp.controller("movieStubController", function ($scope, movieStubFactor
     $scope.getCount = function (n) {
         return new Array(n);
     };
+
+    $scope.isActive = function (route) {
+      return route === $location.path();
+    }
+
+
+
+
+
+
+
+
 });
 // MOVIE DETAIS
 movieStubApp.controller("movieDetailsController", function ($scope, $routeParams) {
