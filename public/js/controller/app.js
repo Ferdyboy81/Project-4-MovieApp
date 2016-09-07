@@ -14,7 +14,7 @@ movieStubApp.controller("movieStubController", function ($scope, movieStubFactor
             }
         }
     };
-    // A simple back function, that will navigate between views
+    // function that helps navigate between views
     $scope.back = function () {
         window.history.back();
     };
@@ -22,21 +22,21 @@ movieStubApp.controller("movieStubController", function ($scope, movieStubFactor
         return new Array(n);
     };
 });
-// movie details controller
+// MOVIE DETAIS
 movieStubApp.controller("movieDetailsController", function ($scope, $routeParams) {
     $scope.getMovieById($routeParams.id);
 });
 
-// ticket booking controller
+// BOOKING TICKETS
 movieStubApp.controller("bookTicketsController", function ($scope, $http, $location, $routeParams) {
-    $scope.getMovieById(routeParams.id);
-    $scope.onlyNumbers = /^\d+$/;
+    $scope.getMovieById($routeParams.id);
+    $scope.onlyNumbers = /^\d+$/; //allows only numbers greater than 0.
     $scope.formData = {};
     $scope.formData.movie_id = $scope.currMovie.id;
     $scope.formData.movie_name = $scope.currMovie.name;
     $scope.formData.date = "Today"
 
-    $scope.processForm = function () {
+$scope.processForm = function () {
         $http({
             method: 'POST',
             url: '/book',
@@ -46,7 +46,6 @@ movieStubApp.controller("bookTicketsController", function ($scope, $http, $locat
             } // set the headers so angular passing info as form data (not request payload)
         })
             .success(function (data) {
-                //$location.path("/bookings");
                 console.log(data);
             });
     };
