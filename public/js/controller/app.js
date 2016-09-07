@@ -22,9 +22,17 @@ movieStubApp.controller("movieStubController", function ($scope, movieStubFactor
         return new Array(n);
     };
 });
+// movie details controller
 movieStubApp.controller("movieDetailsController", function ($scope, $routeParams) {
     $scope.getMovieById($routeParams.id);
 });
+
+// ticket booking controller
+movieStubApp.controller("bookTicketsController", function ($scope, $http, $location, $routeParams) {
+    $scope.getMovieById(routeParams.id);
+}
+
+
 
 
 

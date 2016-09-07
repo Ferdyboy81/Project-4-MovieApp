@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html data-ng-app="movieStubApp">
+<html ng-app="movieStubApp">
 
 <head>
     <title>Movie Stub - Book Movie Tickets Online</title>
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
+    <!-- app -->
     <link rel="stylesheet" type="text/css" href="css/app.css">
     <!-- angulars -->
     <script type="text/javascript" src="js/lib/angular.min.js"></script>
@@ -20,9 +21,10 @@
     <script type="text/javascript" src="js/router/router.js"></script>
     <!-- services -->
     <script type="text/javascript" src="js/service/services.js"></script>
+
 </head>
 
-<body class="container" data-ng-controller="movieStubController">
+<body class="container" ng-controller="movieStubController">
     <div ng-include src="headerSrc"></div>
     <hr />
     <div ng-view=""></div> <!-- //Place holder for all pages -->

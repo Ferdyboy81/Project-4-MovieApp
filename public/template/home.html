@@ -1,7 +1,7 @@
 <h2>Book a Movie Ticket</h2>
 <input type="text" placeholder="Search Movies" class="form-control" data-ng-model="search">
 
-<div class="">
+<div class="" >
     <div class="row movies-list">
         <div class="col-md-4" data-ng-repeat="movie in movies | orderBy:'name':true | filter:search">
             <h2>{{movie.name | uppercase}}</h2>
