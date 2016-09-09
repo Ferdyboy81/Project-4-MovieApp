@@ -1,18 +1,70 @@
-body {
-    padding-top: 50px;
+body
+{
+  padding-top: 50px;
+  font-size: 20px;
+  background-color: black;
+  background: url(http://freebackgroundshd.com/wp-content/uploads/2016/04/Simple-Dark-Blue-Free-HD-Background-1280x800.jpg);
+}
+
+h2
+{
+  font-size: 25px;
+  color: white;
+}
+
+h3, h4
+{
+  color: white;
+}
+
+p
+{
+  color: white;
 
 }
-#container {
+
+.table>thead:first-child>tr:first-child>th
+{
+  color: #A33632;
+}
+
+.glyphicon-star
+{
+  color: yellow;
+}
+label
+{
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: 700;
+    color: white;
+}
+
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th
+{
+    padding: 8px;
+    line-height: 1.42857143;
+    vertical-align: top;
+    border-top: 1px solid #ddd;
+    color: white;
+}
+
+#container
+{
     padding: 39px 0px;
 }
+
 .thumb-big
 {
     height: 500px;
 }
+
 .movies-list
 {
     text-align: center;
 }
+
 .availability
 {
     padding: 9px;
@@ -20,8 +72,26 @@ body {
     font-weight: 500;
     color: black;
 }
+
 .bookThumb
 {
     height: 149px;
     padding-right: 21px;
 }
+
+.logo
+{
+    height: 60px;
+    width: 70px;
+}
+
+.navbar-brand
+{
+    float: left;
+    height: 50px;
+    padding: 15px 15px;
+    font-size: 30px;
+    line-height: 20px;
+}
+
+/*carousel*/

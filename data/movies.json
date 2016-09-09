@@ -17,11 +17,11 @@
         },
     {
         "id": 2,
-        "name": "Transformers",
+        "name": "Zootopia",
         "rating": 5,
         "availability": 5,
-        "review": "Transformers: Dark of the Moon features Sam Witwicky taking his first tenuous steps into adulthood while remaining a reluctant human ally of Optimus Prime. The film centers around the space race between the U.S.S.R. and the USA, suggesting there was a hidden Transformers role in it all that remains one of the planet's most dangerous secrets. The villain of the third film will be Shockwave. (DreamWorks Pictures)",
-        "thumb": "http://upload.wikimedia.org/wikipedia/en/6/66/Transformers07.jpg"
+        "review": "In a city of anthropomorphic animals, a rookie bunny cop and a cynical con artist fox must work together to uncover a conspiracy (DreamWorks Pictures)",
+        "thumb": "https://upload.wikimedia.org/wikipedia/en/e/ea/Zootopia.jpg"
         },
     {
         "id": 3,
@@ -41,11 +41,11 @@
         },
     {
         "id": 5,
-        "name": "X-Men",
+        "name": "Ben-Hur",
         "rating": 4,
         "availability": 0,
-        "review": " Dr. Charles Xavier gathers children from all over the planet who were born with an added twist to their genetic code. Known as the X - factor  these children can perform extraordinary feats. Dr. Xavier calls them his X-Men.",
-        "thumb": "http://upload.wikimedia.org/wikipedia/en/8/8c/XMen1poster.jpg"
+        "review": "Judah Ben-Hur, a prince falsely accused of treason by his adopted brother, an officer in the Roman army, returns to his homeland after years at sea to seek revenge, but finds redemption.",
+        "thumb": "https://upload.wikimedia.org/wikipedia/en/b/bc/Ben-Hur_2016_poster.jpg"
         },
     {
         "id": 6,
@@ -71,4 +71,7 @@
         "review": " A government scientist (Bacon) discovers how to make people invisible. After a freak accident that makes him slowly disappear, he begins to go insane and seeks revenge on the other scientists on the project.",
         "thumb": "http://upload.wikimedia.org/wikipedia/en/e/e1/Poster_Hollow_Man.jpg"
         }
-    ]
+
+
+
+]
