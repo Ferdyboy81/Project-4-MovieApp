@@ -17,12 +17,11 @@ app.set("view options", {
     layout: false
 });
 
-
-app.use(express.static(__dirname + '/public'));
-
 // callback functions:
+app.use(express.static(__dirname + '/public')
+);
 
-
+// when get request is made will go to the index.html.
 app.get('/', function (req, res) {
     res.render('public/index.html');
 });
@@ -35,7 +34,7 @@ app.get('/movies', function (req, res) {
 // update bookings
 app.get('/bookings', function (req, res) {
     res.json(bookings);
-})
+});
 
 // update bookTickets
 app.post('/book', function (req, res) {
